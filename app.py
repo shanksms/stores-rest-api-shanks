@@ -9,7 +9,7 @@ from resources.store import StoreList, Store
 from resources.user import UserRegister
 
 app = Flask(__name__)
-file_path = os.path.abspath(os.getcwd())+"\data.db"
+file_path = os.path.abspath(os.getcwd())+"/data.db"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + file_path
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'jose'
