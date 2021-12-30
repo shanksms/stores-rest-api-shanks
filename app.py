@@ -36,7 +36,7 @@ api.add_resource(StoreList, '/stores')
 api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':
-    from using_sql_alchemy.db import db
+    from db import db
     db.init_app(app)
     app.run(port=5000, debug=True)
 
